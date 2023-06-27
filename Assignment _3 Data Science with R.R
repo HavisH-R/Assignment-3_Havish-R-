@@ -15,12 +15,12 @@ ggplot(iris, aes(x = Petal.Length, y = Sepal.Length)) +
 ggplot(txhousing, aes(x = month,y=sales,fill=month)) +
   geom_histogram(stat="identity")+labs(x = "Month", y = "Sales", fill = "Month") +
   ggtitle("Sales vs Month")
-#By this plot The sales are maximum around the months 5,6,7 i.e Summer Season
+#By this histogram it can be seen that The sales are maximum around the months 5,6,7 i.e Summer Season
 ggplot(txhousing, aes(x = date, y = sales,col = city)) +
   geom_line() +
   labs(x = "Date", y = "Sales") +
   ggtitle("Sales over Years in Cities")
-#this plot shows total Sales over the years in cities
+#this plot shows total Sales over the years in cities and The city with maximum sales over the years can be observed
 ggplot(txhousing, aes(sales, volume, color = month)) +
   geom_point() +
   labs(x = "Sales", y = "Volume", color = "Month") +
